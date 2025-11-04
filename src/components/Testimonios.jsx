@@ -33,8 +33,8 @@ function Testimonios() {
                 <div className="flex flex-col justify-center items-center p-4">
                     <div className="relative w-full h-64 overflow-hidden rounded-2xl shadow-md">
                         <img
-                            src={imagenesCarrusel[indice]}
-                            alt={`Imagen ${indice + 1}`}
+                            src={imagenesCarrusel[Carrusel]}
+                            alt={`Imagen ${Carrusel + 1}`}
                             className="w-full h-full object-cover transition-all duration-700 ease-in-out"
                         />
                     </div>
