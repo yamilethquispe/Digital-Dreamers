@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "titulo": "EcoRaíces",
+    "descripcion": "Plataforma web para una cooperativa agrícola que promueve prácticas sostenibles y comercio justo entre productores locales.",
+    "categoria": "Desarrollo Web",
+    "tecnologias": ["React", "TailwindCSS", "Firebase"],
+    "imagen": "/images/ecoraices.png",
+    "enlace": "https://ecoraices.example.com",
+    "año": 2025,
+    "cliente": "Cooperativa EcoRaíces",
+    "impacto": "Apoya a más de 80 agricultores locales en la venta directa de productos orgánicos."
+  },
+  {
+    "id": 2,
+    "titulo": "Mujeres que Inspiran",
+    "descripcion": "Sitio web con blog y espacio comunitario para visibilizar historias de mujeres emprendedoras en Latinoamérica.",
+    "categoria": "Diseño Web y Branding",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "imagen": "/images/mujeres-que-inspiran.png",
+    "enlace": "https://mujeresinspiran.example.com",
+    "año": 2024,
+    "cliente": "Red de Emprendedoras Locales",
+    "impacto": "Ha impulsado más de 40 emprendimientos liderados por mujeres."
+  },
+  {
+    "id": 3,
+    "titulo": "GreenCycle App",
+    "descripcion": "Aplicación web que conecta hogares con centros de reciclaje cercanos y ofrece recompensas por materiales reciclados.",
+    "categoria": "Aplicación Web",
+    "tecnologias": ["Next.js", "Node.js", "MongoDB"],
+    "imagen": "/images/greencycle.png",
+    "enlace": "https://greencycle.example.com",
+    "año": 2025,
+    "cliente": "Startup VerdeTech",
+    "impacto": "Redució en un 25% los desechos no reciclados en la comunidad piloto."
+  },
+  {
+    "id": 4,
+    "titulo": "Artesanas del Sol",
+    "descripcion": "Tienda online para un colectivo de mujeres artesanas que elaboran productos con materiales reciclados.",
+    "categoria": "E-commerce",
+    "tecnologias": ["Shopify", "Liquid", "Canva"],
+    "imagen": "/images/artesanas-del-sol.png",
+    "enlace": "https://artesanasdelsol.example.com",
+    "año": 2023,
+    "cliente": "Colectivo Artesanas del Sol",
+    "impacto": "Aumentó las ventas en línea en un 60% durante el primer trimestre."
+  },
+  {
+    "id": 5,
+    "titulo": "BioMarket Digital",
+    "descripcion": "Marketplace digital que conecta productores ecológicos con consumidores conscientes de su huella ambiental.",
+    "categoria": "Desarrollo Full Stack",
+    "tecnologias": ["Vue.js", "Express", "PostgreSQL"],
+    "imagen": "/images/biomarket.png",
+    "enlace": "https://biomarket.example.com",
+    "año": 2025,
+    "cliente": "BioMarket Perú",
+    "impacto": "Más de 500 productos ecológicos disponibles y 2,000 usuarios activos."
+  },
+  {
+    "id": 6,
+    "titulo": "Raíces Urbanas",
+    "descripcion": "Plataforma interactiva que enseña sobre huertos urbanos y sostenibilidad a través de talleres en línea.",
+    "categoria": "Educación Ambiental",
+    "tecnologias": ["React", "Vite", "Supabase"],
+    "imagen": "/images/raices-urbanas.png",
+    "enlace": "https://raicesurbanas.example.com",
+    "año": 2024,
+    "cliente": "Fundación Raíces",
+    "impacto": "Ha capacitado a más de 300 familias en agricultura urbana."
+  },
+  {
+    "id": 7,
+    "titulo": "Café Femenino Digital",
+    "descripcion": "Landing page y estrategia de marketing digital para una marca de café liderada por mujeres campesinas.",
+    "categoria": "Marketing Digital",
+    "tecnologias": ["WordPress", "Elementor", "SEO"],
+    "imagen": "/images/cafe-femenino.png",
+    "enlace": "https://cafefemenino.example.com",
+    "año": 2023,
+    "cliente": "Asociación Café Femenino",
+    "impacto": "Incrementó las ventas internacionales en un 40% tras la campaña digital."
+  },
+  {
+    "id": 8,
+    "titulo": "Agua Viva",
+    "descripcion": "Sitio educativo con recursos sobre conservación del agua y soluciones sostenibles para comunidades rurales.",
+    "categoria": "Diseño Web Educativo",
+    "tecnologias": ["HTML5", "CSS3", "GSAP"],
+    "imagen": "/images/agua-viva.png",
+    "enlace": "https://aguaviva.example.com",
+    "año": 2024,
+    "cliente": "ONG Agua Viva",
+    "impacto": "Más de 10,000 visitas mensuales y colaboración con 15 instituciones educativas."
+  },
+  {
+    "id": 9,
+    "titulo": "EcoModa Circular",
+    "descripcion": "Catálogo digital y tienda de moda sostenible enfocada en la reutilización de textiles y economía circular.",
+    "categoria": "E-commerce y Sostenibilidad",
+    "tecnologias": ["React", "Stripe API", "Firebase"],
+    "imagen": "/images/ecomoda-circular.png",
+    "enlace": "https://ecomoda.example.com",
+    "año": 2025,
+    "cliente": "EcoModa Circular",
+    "impacto": "Disminuyó el desperdicio textil en 2 toneladas al año."
+  },
+  {
+    "id": 10,
+    "titulo": "Reverdece",
+    "descripcion": "Campaña digital interactiva para fomentar la reforestación y el voluntariado ambiental en comunidades urbanas.",
+    "categoria": "Campaña Digital",
+    "tecnologias": ["Svelte", "CSS Animations", "Mapbox"],
+    "imagen": "/images/reverdece.png",
+    "enlace": "https://reverdece.example.com",
+    "año": 2025,
+    "cliente": "Movimiento Reverdece",
+    "impacto": "Más de 2,500 árboles plantados gracias a la interacción en línea."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "titulo": "Plataforma Educativa Inclusiva",
+    "categoria": "Web",
+    "descripcion": "Diseñamos y desarrollamos una plataforma educativa accesible que combina estética y funcionalidad.",
+    "tecnologias": ["React", "Tailwind CSS", "Figma"],
+    "imagen": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9",
+    "demo": "#",
+    "codigo": "#"
+  },
+  {
+    "id": 2,
+    "titulo": "Landing Page Digital Dreamers",
+    "categoria": "Frontend",
+    "descripcion": "Landing institucional diseñada para transmitir la esencia del equipo con un diseño limpio y moderno.",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "imagen": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "demo": "#",
+    "codigo": "#"
+  },
+  {
+    "id": 3,
+    "titulo": "Dashboard de Impacto",
+    "categoria": "Data Viz",
+    "descripcion": "Panel interactivo que permite visualizar el alcance de proyectos sociales impulsados por mujeres.",
+    "tecnologias": ["React", "Chart.js", "Tailwind CSS"],
+    "imagen": "https://images.unsplash.com/photo-1556155092-8707de31f9c4",
+    "demo": "#",
+    "codigo": "#"
+  }
+]

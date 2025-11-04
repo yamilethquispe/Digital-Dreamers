@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "proyectoId": 1,
+    "nombre": "María Huamán",
+    "rol": "Fundadora de Cooperativa EcoRaíces",
+    "motivacion": "Quise crear una red justa donde los agricultores pudieran vender sus productos sin intermediarios, promoviendo el consumo responsable.",
+    "testimonio": "Trabajar con su equipo fue una experiencia transformadora. Lograron traducir nuestra misión ecológica en una plataforma funcional, cálida y accesible para productores rurales. Hoy sentimos que nuestra causa tiene voz digital."
+  },
+  {
+    "id": 2,
+    "proyectoId": 2,
+    "nombre": "Carolina Suárez",
+    "rol": "Directora de Mujeres que Inspiran",
+    "motivacion": "Buscaba un espacio para visibilizar historias de mujeres fuertes, creativas y resilientes en Latinoamérica.",
+    "testimonio": "El diseño y la sensibilidad del equipo fueron increíbles. Entendieron perfectamente la esencia del proyecto y nos ayudaron a construir una comunidad digital auténtica y empática."
+  },
+  {
+    "id": 3,
+    "proyectoId": 3,
+    "nombre": "Diego Salazar",
+    "rol": "Cofundador de GreenCycle App",
+    "motivacion": "Queríamos facilitar el reciclaje urbano mediante tecnología y educación ambiental.",
+    "testimonio": "Su equipo combinó innovación y propósito social. Nos acompañaron en todo el proceso, desde la idea hasta el lanzamiento. Gracias a ellos, la app superó nuestras expectativas técnicas y de impacto."
+  },
+  {
+    "id": 4,
+    "proyectoId": 4,
+    "nombre": "Rosa Quispe",
+    "rol": "Líder del Colectivo Artesanas del Sol",
+    "motivacion": "Nuestro sueño era vender nuestras artesanías hechas con materiales reciclados y llegar a más personas sin perder nuestra identidad.",
+    "testimonio": "Nos escucharon con paciencia y diseñaron una tienda hermosa y fácil de usar. Por primera vez sentimos que nuestra historia se cuenta también a través del diseño."
+  },
+  {
+    "id": 5,
+    "proyectoId": 5,
+    "nombre": "Alejandro Paredes",
+    "rol": "CEO de BioMarket Perú",
+    "motivacion": "Queríamos conectar a productores ecológicos con consumidores que valoran el origen de lo que compran.",
+    "testimonio": "El resultado fue un marketplace ágil, estéticamente impecable y alineado con nuestra filosofía verde. Su profesionalismo y compromiso marcaron la diferencia."
+  },
+  {
+    "id": 6,
+    "proyectoId": 6,
+    "nombre": "Lucía Ramos",
+    "rol": "Fundadora de Fundación Raíces",
+    "motivacion": "Deseábamos enseñar sobre huertos urbanos y sostenibilidad de forma digital para llegar a más familias.",
+    "testimonio": "El equipo entendió que no solo queríamos una web, sino una herramienta educativa viva. Diseñaron una experiencia interactiva que realmente inspira a aprender y sembrar."
+  },
+  {
+    "id": 7,
+    "proyectoId": 7,
+    "nombre": "Marta Aguilar",
+    "rol": "Directora de Café Femenino",
+    "motivacion": "Nuestro café nació para empoderar a mujeres campesinas y contar sus historias a través de cada taza.",
+    "testimonio": "El trabajo de diseño y marketing fue impecable. Nos ayudaron a construir una marca sólida y coherente. Desde entonces, nuestra presencia en línea refleja la fuerza y calidez de nuestras productoras."
+  },
+  {
+    "id": 8,
+    "proyectoId": 8,
+    "nombre": "Javier León",
+    "rol": "Coordinador de ONG Agua Viva",
+    "motivacion": "Queríamos crear un espacio educativo para que niños y jóvenes comprendan la importancia del agua y el medio ambiente.",
+    "testimonio": "El resultado superó nuestras expectativas. El sitio es dinámico, educativo y visualmente encantador. Su equipo trabaja con un sentido de propósito que se nota en cada detalle."
+  },
+  {
+    "id": 9,
+    "proyectoId": 9,
+    "nombre": "Valeria Soto",
+    "rol": "Creadora de EcoModa Circular",
+    "motivacion": "Siempre soñé con unir la moda y la sostenibilidad, demostrando que el estilo y el respeto al planeta pueden ir de la mano.",
+    "testimonio": "El diseño de la tienda fue elegante, moderno y completamente funcional. Lograron captar la esencia de la moda consciente. Fue un proceso lleno de creatividad y empatía."
+  },
+  {
+    "id": 10,
+    "proyectoId": 10,
+    "nombre": "Andrés Flores",
+    "rol": "Fundador de Movimiento Reverdece",
+    "motivacion": "Mi meta era crear una campaña digital que inspirara a las personas a plantar árboles y reconectar con la naturaleza.",
+    "testimonio": "Gracias al equipo, logramos transmitir nuestra pasión ambiental en una plataforma interactiva. Su visión estratégica y estética hicieron que miles se sumaran al movimiento."
+  }
+]
