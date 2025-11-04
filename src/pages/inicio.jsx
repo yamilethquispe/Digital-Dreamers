@@ -3,6 +3,8 @@ import CalculadoraPerfil from "../components/Calculadora";
 import Testimonios from "../components/Testimonios";
 
 function Inicio() {
+    const base = import.meta.env.BASE_URL || '/';
+
     return (
         <div className="flex flex-col">
 
@@ -103,7 +105,8 @@ function Inicio() {
                         <div
                             key={index}
                             className="bg-[#FFF2AF] max-w-[280px] rounded-2xl overflow-hidden shadow-md border-t-[10px] border-[#B2A5FF] transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer">
-                            <img src="/images/img2.png"
+                            <img 
+                                src="/images/img2.png"
                                 alt={`Foto de ${persona.nombre}`}
                                 className="w-full h-[200px] object-cover"/>
                             <div className="p-5 text-center">

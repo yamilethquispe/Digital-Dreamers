@@ -2,12 +2,13 @@ import { useState, useEffect } from "react";
 import testimonios from "./data/testimonios.json";
 
 function Testimonios() {
-
     const [Carrusel, setCarrusel] = useState(0);
+
+    // ✅ Usamos import.meta.env.BASE_URL para que funcione en GitHub Pages
     const imagenesCarrusel = [
-        "/images/carrusel1.jpg",
-        "/images/carrusel2.jpg",
-        "/images/carrusel3.jpg"
+    `${import.meta.env.BASE_URL}images/carrusel1.jpg`,
+    `${import.meta.env.BASE_URL}images/carrusel2.jpg`,
+    `${import.meta.env.BASE_URL}images/carrusel3.jpg`,
     ];
 
     useEffect(() => {
@@ -32,8 +33,8 @@ function Testimonios() {
                 <div className="flex flex-col justify-center items-center p-4">
                     <div className="relative w-full h-64 overflow-hidden rounded-2xl shadow-md">
                         <img
-                            src={imagenesCarrusel[Carrusel]}
-                            alt="Carrusel de proyectos"
+                            src={imagenesCarrusel[indice]}
+                            alt={`Imagen ${indice + 1}`}
                             className="w-full h-full object-cover transition-all duration-700 ease-in-out"
                         />
                     </div>
