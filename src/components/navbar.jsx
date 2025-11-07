@@ -46,8 +46,9 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* DERECHA: BUSCADOR + LOGIN */}
+        {/* DERECHA: BUSCADOR + LOGIN/USUARIO */}
         <div className="flex justify-center items-center gap-4">
+
           {/* BUSCADOR */}
           <div className="flex justify-center items-center gap-2 bg-[#FFF2AF] px-3 py-2 rounded-2xl shadow-md max-w-[60%]">
             <input
@@ -62,34 +63,41 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* LOGIN / LOGOUT */}
-          <div className="flex items-center gap-2">
+          {/* 🔒 SECCIÓN DE AUTENTICACIÓN */}
+          <div className="flex items-center gap-3 text-white text-sm">
             {user ? (
               <>
-                <span className="text-white text-sm">
+                <span className="text-[#FFF2AF]">
                   Hola, {user.displayName || user.email}
                 </span>
+
                 <Link
                   to="/dashboard"
-                  className="px-3 py-1.5 rounded-full bg-[#FFF2AF] text-[#493D9E] text-sm font-semibold hover:bg-[#DAD2FF] transition">
+                  className="px-3 py-1.5 rounded bg-[#FFF2AF] text-[#493D9E] font-semibold transition duration-300 hover:bg-[#B2A5FF]">
                   Dashboard
                 </Link>
+
+                <Link
+                  to="/perfil"
+                  className="px-3 py-1.5 rounded border border-[#FFF2AF] font-semibold hover:bg-[#DAD2FF] hover:text-[#493D9E] transition">
+                  Perfil
+                </Link>
+
                 <button
                   onClick={logout}
-                  className="px-3 py-1.5 rounded-full border border-[#FFF2AF] text-white text-sm hover:bg-[#FFF2AF] hover:text-[#493D9E] transition">
+                  className="px-3 py-1.5 rounded border border-[#FFF2AF] font-semibold hover:bg-[#DAD2FF] hover:text-[#493D9E] transition">
                   Salir
                 </button>
               </>
             ) : (
               <Link
                 to="/login"
-                className="px-3 py-1.5 rounded-full bg-[#FFF2AF] text-[#493D9E] text-sm font-semibold hover:bg-[#DAD2FF] transition">
+                className="px-3 py-1.5 rounded bg-[#FFF2AF] text-[#493D9E] font-semibold hover:bg-[#DAD2FF] transition">
                 Iniciar sesión
               </Link>
             )}
           </div>
         </div>
-
       </nav>
     </div>
   );

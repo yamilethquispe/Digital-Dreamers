@@ -37,7 +37,7 @@ function Inicio() {
                 {/* Imagen decorativa */}
                 <div className="relative z-10 mt-10 lg:mt-0">
                     <img
-                        src="/digital-dreamers/images/img1-index.png"
+                        src={`${import.meta.env.BASE_URL}images/img1-index.png`}
                         alt="Chicas programadoras"
                         className="w-[350px] md:w-[450px] lg:w-[500px] rounded-3xl shadow-lg hover:-translate-y-2 transition-transform duration-300"
                     />
@@ -67,7 +67,7 @@ function Inicio() {
                 <div className="grid grid-cols-2 gap-5 border-b-[10px] border-[#B2A5FF] rounded-2xl bg-white mx-24 my-12 p-4 overflow-hidden">
                     <div className="flex justify-center items-center">
                         <img
-                            src="/digital-dreamers/images/imgobj.png"
+                            src={`${import.meta.env.BASE_URL}images/imgobj.png`}
                             alt="nuestros objetivos"
                             className="w-[400px] h-[300px] rounded-2xl object-cover transition-transform duration-300 hover:-translate-y-2"
                         />
@@ -105,7 +105,7 @@ function Inicio() {
                             key={index}
                             className="bg-[#FFF2AF] max-w-[280px] rounded-2xl overflow-hidden shadow-md border-t-[10px] border-[#B2A5FF] transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer">
                             <img 
-                                src="/digital-dreamers/images/img2.png"
+                                src={`${import.meta.env.BASE_URL}images/img2.png`}
                                 alt={`Foto de ${persona.nombre}`}
                                 className="w-full h-[200px] object-cover"/>
                             <div className="p-5 text-center">

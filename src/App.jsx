@@ -17,6 +17,9 @@ import ProtectedRoute from "./auth/ProtectedRoute.jsx";
 import Login from "./pages/login.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 
+// ✅ NUEVO IMPORT AÑADIDO
+import Profile from "./pages/Profile.jsx";
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +29,7 @@ function App() {
 
           <main className="flex-grow p-6">
             <Routes>
+              {/* Rutas existentes */}
               <Route path="/" element={<Inicio />} />
               <Route path="/nosotras" element={<Nosotras />} />
               <Route path="/contacto" element={<Contacto />} />
@@ -45,12 +49,25 @@ function App() {
                 }
               />
 
+              {/* ✅ NUEVA RUTA PROTEGIDA: PERFIL */}
+              <Route
+                path="/perfil"
+                element={
+                  <ProtectedRoute>
+                    <Profile />
+                  </ProtectedRoute>
+                }
+              />
+
               {/* Página 404 */}
-              <Route path="*" element={<div className="p-6">404 - Página no encontrada</div>} />
+              <Route
+                path="*"
+                element={<div className="p-6">404 - Página no encontrada</div>}
+              />
             </Routes>
           </main>
-
         </div>
+
         <Footer />
       </AuthProvider>
     </BrowserRouter>
