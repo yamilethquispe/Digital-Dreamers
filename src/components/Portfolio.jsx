@@ -13,7 +13,7 @@ function Portfolio() {
         "Creada con React, Tailwind CSS y Javascript, incluye secciones como Inicio, Sobre Nosotras, Valores y Contacto, reflejando la esencia del equipo.",
       image: "https://i.ibb.co/FbJZhKJ/inspiracion.jpg",
       screenshots: ["https://i.ibb.co/HFmpPyB/inspiracion2.jpg"],
-      link: "https://sancharrimacassi-dev.github.io/CT-Digital-Dreamers/index.html",
+      link: "https://yamilethquispe.github.io/Digital-Dreamers/"
     },
 
     {
@@ -38,7 +38,7 @@ function Portfolio() {
         "Sitio web con animaciones sutiles, excelente uso del color y diseño minimalista, que sirve como guía para futuros proyectos del equipo.",
       image: "https://i.ibb.co/fY0HQt4/calculadora.jpg",
       screenshots: ["https://i.ibb.co/4Yr9ktF/calculadora2.jpg"],
-      link: "https://codigo-rosa-u3.vercel.app/",
+      link: "https://codigo-rosa-u4.vercel.app/"
     },
   ];
 
