@@ -7,7 +7,6 @@ function Confianza() {
         <>
             <Portafolio />
             <Portfolio/>
-            <Testimonios />
         </>
     )
 }
