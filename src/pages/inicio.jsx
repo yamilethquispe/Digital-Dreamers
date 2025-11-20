@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
-import CalculadoraPerfil from "../components/Calculadora";
-import Testimonios from "../components/Testimonios";
 
-function Inicio() {
+export default function Inicio() {
 
     return (
         <div className="flex flex-col">
 
-            {/* Portada principal */}
             <section className="relative flex flex-col lg:flex-row items-center justify-between bg-gradient-to-br from-[#B2A5FF] to-[#FFF2AF] px-10 lg:px-20 py-24 overflow-hidden">
 
                 {/* Fondo decorativo */}
@@ -15,7 +12,7 @@ function Inicio() {
 
                 {/* Texto principal */}
                 <div className="relative z-10 max-w-xl text-center lg:text-left space-y-5">
-                    <h1 className="text-6xl font-[Merienda] font-bold text-[#493D9E] leading-tight">
+                    <h1 className="text-6xl tracking-wide font-[Merienda] font-bold text-[#493D9E] leading-tight">
                         ¡Bienvenid@s a <span className="text-[#FFF2AF] drop-shadow-md">Digital Dreamers</span>!
                     </h1>
 
@@ -29,7 +26,7 @@ function Inicio() {
                             to="/contacto"
                             className="inline-block bg-[#493D9E] text-[#FFF2AF] font-bold px-6 py-3 rounded-2xl text-lg shadow-md transition-all duration-300 hover:bg-[#FFF2AF] hover:text-[#493D9E] hover:shadow-xl"
                         >
-                            Contactanos
+                            Contáctanos
                         </Link>
                     </div>
                 </div>
@@ -39,13 +36,13 @@ function Inicio() {
                     <img
                         src={`${import.meta.env.BASE_URL}images/img1-index.png`}
                         alt="Chicas programadoras"
-                        className="w-[350px] md:w-[450px] lg:w-[500px] rounded-3xl shadow-lg hover:-translate-y-2 transition-transform duration-300"
+                        className="w-full max-w-[500px] rounded-3xl hover:-translate-y-2 transition-transform duration-300"
                     />
                 </div>
             </section>
 
-            {/* 💬 NUESTRA HISTORIA */}
-            <section className="flex flex-col lg:flex-row justify-center items-center gap-10 bg-[#F8F7FF] px-10 lg:px-24 py-20 border-b-[10px] border-[#FFF2AF]">
+            {/* SECCIÓN 1 - 💬 NUESTRA HISTORIA */}
+            <section className="flex flex-col lg:flex-row justify-center items-center gap-10 bg-[#F8F7FF] px-10 lg:px-24 py-24 border-b-[10px] border-[#FFF2AF]">
                 <div className="max-w-3xl text-[#493D9E] text-justify text-lg font-medium leading-relaxed">
                     <h2 className="text-4xl font-[Merienda] font-bold text-center mb-8">Nuestra historia 🌸</h2>
                     <p>
@@ -64,12 +61,12 @@ function Inicio() {
                     style={{ color: "#493D9E" }}>🎯 Porque programar con propósito...</h2>
                 </div>
 
-                <div className="grid grid-cols-2 gap-5 border-b-[10px] border-[#B2A5FF] rounded-2xl bg-white mx-24 my-12 p-4 overflow-hidden">
+                <div className="grid grid-cols-2 gap-5 border-b-[10px] border-b-gradient-to-r from-[#B2A5FF] to-[#FFF2AF] border-[#B2A5FF] rounded-2xl bg-white px-10 md:px-24 my-12 p-4 overflow-hidden">
                     <div className="flex justify-center items-center">
                         <img
                             src={`${import.meta.env.BASE_URL}images/imgobj.png`}
                             alt="nuestros objetivos"
-                            className="w-[400px] h-[300px] rounded-2xl object-cover transition-transform duration-300 hover:-translate-y-2"
+                            className="w-full max-w-[500px] rounded-2xl object-cover transition-transform duration-300 hover:-translate-y-2"
                         />
                     </div>
                     <div className="flex justify-center text-justify p-12 text-[22px] font-medium text-[#493D9E]">
@@ -94,7 +91,7 @@ function Inicio() {
                     style={{ color: "#493D9E" }}>¡Formamos un equipo sin igual!</h3>
                 </div>
 
-                <div className="flex flex-wrap justify-center gap-8 mx-24 my-12 p-4">
+                <div className="flex flex-wrap justify-center gap-8 px-10 md:px-24 my-12 p-4">
                     {[
                         { nombre: "Marcell 🌸", texto: "Especialista en diseño UI/UX, amante del detalle y la belleza en cada proyecto." },
                         { nombre: "Yamileth 💻", texto: "Front-end developer apasionada por un código limpio, funcional y elegante." },
@@ -103,11 +100,11 @@ function Inicio() {
                     ].map((persona, index) => (
                         <div
                             key={index}
-                            className="bg-[#FFF2AF] max-w-[280px] rounded-2xl overflow-hidden shadow-md border-t-[10px] border-[#B2A5FF] transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer">
+                            className="bg-[#FFF2AF] max-w-[280px] rounded-3xl overflow-hidden shadow-md border-t-[10px] border-[#B2A5FF] transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg cursor-pointer hover:rotate-1">
                             <img 
                                 src={`${import.meta.env.BASE_URL}images/img2.png`}
                                 alt={`Foto de ${persona.nombre}`}
-                                className="w-full h-[200px] object-cover"/>
+                                className="w-full max-w-[500px] h-[200px] object-cover"/>
                             <div className="p-5 text-center">
                                 <h3 className="text-[#493D9E] font-[Concert_One] text-xl">{persona.nombre}</h3>
                                 <p className="text-[#493D9E] text-base mt-2">{persona.texto}</p>
@@ -117,11 +114,10 @@ function Inicio() {
                 </div>
             </section>
 
-            {/* SECCIÓN 5 - Calculadora de perfil profesional
-            <CalculadoraPerfil /> */}
+            {/* SECCIÓN 4 - Calculadora de perfil profesional*/}
             
 
-            {/* SECCIÓN 6 - Atajo a "Nosotras" */}
+            {/* SECCIÓN 5 - Atajo a "Nosotras" */}
             <section className="flex flex-col justify-center gap-5 bg-[#DAD2FF] pb-24">
                 <div className="text-center text-[#493D9E] font-[Merienda] text-2xl font-medium pt-8">
                     <h2 className="text-4xl font-bold text-center mb-10"
@@ -131,17 +127,13 @@ function Inicio() {
                 <div className="flex justify-center">
                     <Link
                         to="/nosotras"
-                        className="rounded-2xl bg-[#B2A5FF] text-[#493D9E] text-lg font-bold no-underline px-6 py-3 transition-all duration-300 hover:bg-[#FFF2AF] hover:shadow-md hover:-translate-y-1 active:bg-[#493D9E] active:text-[#FFF2AF]"
+                        className="rounded-2xl bg-[#B2A5FF] text-[#493D9E] text-lg font-bold no-underline px-6 py-3 transition-all duration-300 hover:bg-[#FFF2AF] hover:shadow-md hover:-translate-y-1 active:bg-[#493D9E] active:text-[#FFF2AF] hover:shadow-2xl hover:scale-105"
                     >
                         Nosotras
                     </Link>
                 </div>
-                <div>
-                     <Testimonios />
-                </div>
+
             </section>
        </div>
     );
 }
-
-export default Inicio;
