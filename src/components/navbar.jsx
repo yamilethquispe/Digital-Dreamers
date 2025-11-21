@@ -107,13 +107,6 @@ export default function NavBar() {
                     Dashboard
                   </Link>
 
-                  <Link
-                    to="/perfil"
-                    className="px-3 py-1.5 rounded border border-[#FFF2AF] font-semibold hover:bg-[#DAD2FF] hover:text-[#493D9E] transition"
-                  >
-                    Perfil
-                  </Link>
-
                   <button
                     onClick={logout}
                     className="px-3 py-1.5 rounded border border-[#FFF2AF] font-semibold hover:bg-[#DAD2FF] hover:text-[#493D9E] transition"

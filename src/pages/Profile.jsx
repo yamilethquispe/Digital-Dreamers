@@ -1,39 +1,76 @@
-import { useAuth } from "../auth/AuthProvider";
+import { createContext, useContext, useEffect, useState } from "react";
+import { auth } from "../firebase";
+import {
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  signOut,
+  sendPasswordResetEmail,
+  updateProfile,
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "firebase/auth";
 
-export default function Profile() {
-  const { user } = useAuth();
+const AuthContext = createContext(null);
+
+export function AuthProvider({ children }) {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  // Proveedor de Google
+  const googleProvider = new GoogleAuthProvider();
+
+  useEffect(() => {
+    const unsub = onAuthStateChanged(auth, (u) => {
+      setUser(u || null);
+      setLoading(false);
+    });
+    return () => unsub();
+  }, []);
+
+  const register = async ({ email, password, displayName }) => {
+    setError("");
+    const cred = await createUserWithEmailAndPassword(auth, email, password);
+    if (displayName) await updateProfile(cred.user, { displayName });
+    return cred.user;
+  };
+
+  const login = async ({ email, password }) => {
+    setError("");
+    const { user } = await signInWithEmailAndPassword(auth, email, password);
+    return user;
+  };
+
+  
+  // Login con Google (OAuth 2.0)
+  const loginWithGoogle = async () => {
+    setError("");
+    const result = await signInWithPopup(auth, googleProvider);
+    return result.user;
+  };
+
+  
+  const logout = () => signOut(auth);
+  const resetPassword = (email) => sendPasswordResetEmail(auth, email);
 
   return (
-    <div className="max-w-5xl mx-auto p-6">
-      <h1 className="text-2xl font-semibold mb-4">Perfil del usuario</h1>
-
-      {!user ? (
-        <p className="text-gray-600">
-          No hay información de usuario disponible.
-        </p>
-      ) : (
-        <div className="space-y-3">
-          <p>
-            <span className="font-semibold">Nombre: </span>
-            {user.displayName || "Sin nombre registrado"}
-          </p>
-
-          <p>
-            <span className="font-semibold">Correo: </span>
-            {user.email}
-          </p>
-
-          {user.photoURL && (
-            <div className="mt-4">
-              <img
-                src={user.photoURL}
-                alt="Foto de perfil"
-                className="w-24 h-24 rounded-full border"
-              />
-            </div>
-          )}
-        </div>
-      )}
-    </div>
+    <AuthContext.Provider
+      value={{
+        user,
+        loading,
+        error,
+        setError,
+        register,
+        login,
+        logout,
+        resetPassword,
+        loginWithGoogle, 
+      }}
+    >
+      {children}
+    </AuthContext.Provider>
   );
 }
+
+export const useAuth = () => useContext(AuthContext);

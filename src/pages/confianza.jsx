@@ -5,7 +5,6 @@ import Portfolio from "../components/Portfolio";
 function Confianza() {
     return (
         <>
-            <Portafolio />
             <Portfolio/>
         </>
     )
